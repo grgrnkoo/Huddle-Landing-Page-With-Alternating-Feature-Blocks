@@ -1,0 +1,352 @@
+/* font-family: "Open Sans", sans-serif; body, cta  */
+/* font-family: "Poppins", sans-serif; headings  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    min-width: 375px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 15px hsla(0, 0%, 0%, 10%);
+    transition: opacity .5s;
+}
+
+button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.background {
+    background: url('./images/bg-hero-desktop.svg'), hsl(193, 100%, 96%);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 5rem;
+}
+
+header img {
+    width: 15%;
+}
+
+.textarea, .imgarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/* 1. Top section */
+
+.topsection .textarea {
+    padding-right: 5rem;
+}
+
+.topsection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem 3.5rem 5rem;
+}
+
+.topsection p {
+    margin: 2rem 0;
+}
+
+.imgarea img {
+    width: 100%;
+}
+
+button.white {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(0, 0%, 0%);
+    width: 30vw;
+    max-width: 12rem;
+    min-width: 8rem;
+}
+
+button.pink {
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 100%, 100%);
+    width: 17rem;
+}
+
+/* 2. Main grid  */
+
+.maintable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 10%);
+    margin: 2rem 0;
+}
+
+.card .textarea, .card .imgarea {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card .textarea {
+    padding-left: 6rem;
+}
+
+.card .imgarea {
+    padding-left: 6rem;
+}
+
+.card img {
+    transform: scale(90%);
+}
+
+.c1, .c3 {
+    flex-direction: row-reverse;
+}
+
+.maintable p {
+    margin: 1.3rem 0;
+    color: hsla(0, 0%, 0%, 50%);
+}
+
+/* 3. Ready to build?  */
+
+.ready {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: hsl(0, 100%, 100%);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 10%);
+    padding: 4rem 0;
+    border-radius: 20px;
+    top: 6rem;
+}
+
+.ready h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ready button {
+    width: 60%;
+}
+
+.ready a {
+    width: 100%;
+    text-align: center;
+}
+
+/* 4. Footer  */
+
+footer {
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
+    padding: 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsla(193, 100%, 96%, 80%);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footgrid {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template: repeat(auto-fill, minmax(200px, 1fr)) / repeat(auto-fill, minmax(20rem, 2fr) minmax(12rem, 1fr)) ;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.g4 {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.grid img {
+    margin-right: .8rem;
+}
+
+.g4 img {
+    width: 30px;
+}
+
+.g4 img:hover {
+    filter: invert(52%) sepia(89%) saturate(2752%) hue-rotate(294deg) brightness(101%) contrast(101%);
+}
+
+.fill path {
+    fill: hsl(0, 100%, 100%);
+}
+
+.fill {
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.copy {
+    font-size: .8rem;
+    position: relative;
+    width: fit-content;
+    float: right;
+    color: hsla(193, 100%, 96%, 80%);
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 870px){
+    header img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+    .ready button {
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .textarea, .imgarea {
+        width: 100%;
+    }
+
+    .topsection, .card {
+        flex-direction: column;
+    }
+
+    .topsection .textarea {
+        padding: 0;
+        margin-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textarea {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .textarea a {
+        width: 100%;
+    }
+
+    .textarea .pink {
+        width: 100%;
+    }
+
+    .maintable {
+        padding: 2rem;
+    }
+
+    .card .imgarea, .card .textarea {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .footgrid {
+        margin-top: 2rem;
+        grid-template: repeat(4, auto) / 1fr;
+    }
+
+    .grid {
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid a {
+        margin: .5rem 0;
+    }
+
+    .g4 {
+        margin-top: 2rem;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .copy {
+        float: none;
+        margin: auto;
+    }
+
+    .ready {
+        width: 90%;
+    }
+}
